@@ -43,3 +43,9 @@ jobs:
           heroku_email: "huzaifamalik47@gmail.com"
           appdir: "my-app"
           buildpack: "https://github.com/mars/create-react-app-buildpack"
+    - name: upload cov report
+      env: 
+        CODE_COV_SECRET: ${{ secrets.CODE_COV_SECRET }}
+      run: 
+       
+       
